@@ -3,7 +3,7 @@ import json
 class Library:
     def __init__(self):
         self.books = {}
-        self.id = 0
+        self.id = 1
 
     def add_book(self, title, author, category):
         self.books[f"book_{self.id}"] = {"title": title, "author": author, "category": category}
