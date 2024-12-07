@@ -128,7 +128,7 @@ class DelWindow(ctk.CTkToplevel):
     def del_command(self):
         id_input = self.id.get()
 
-        book_removed = library.del_book(int(id))
+        book_removed = library.del_book(int(id_input))
 
         if book_removed:
             messagebox(title="Livro removido com Sucesso!", message=f"O Livro ID:{id_input} foi removido com sucesso!", icon="info")
